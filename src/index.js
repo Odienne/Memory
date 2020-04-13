@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
+function CoolTest({adjective}) {
+  return <p>Trop {adjective} !!</p>
+}
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <CoolTest adjective='awesome'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
